@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6rem;
+}
+
+:root{
+    --black-color: #000;
+    --white-color: white;
+    --text-color: #ccc;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+.container__set,
+.set{
+    max-width: 720px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.tab{
+    position: relative;
+}
+
+.item{
+    height: auto;
+    color: #c13765;
+    font-size: 2.3rem;
+    font-weight: 400;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 12px 0 20px 12px;
+    border-bottom: 6px solid transparent;
+
+}
+
+.item__actived{
+    opacity: 1;
+}
+
+.bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6px;
+    width: 0px;
+    background-color: #c13765;
+    border-radius: 20px;
+    transition: all 0.8s ease;
+}
+
+.next__actived{
+    opacity: 1;
+    background-color: #fff7fa;
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+.item:hover {
+    color: #4b1c2d;
+    opacity: 1;
+    background-color: #fff7fa;
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+.item:hover .bar{
+    background-color: #fbdce6;
+}
+
+.item:hover .tab-icon{
+    color: #c13765;
+}
+
+.tab-icon{
+    font-size: 3rem;
+    position: relative;
+    top: 3px;
+    right: 0;;
+}
+
+h5{
+    font-size: 2.6rem;
+    margin-bottom: 26px;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.description{
+    display: none;
+    flex-direction: column;
+}
+
+.actived{
+    display: block;
+}
